@@ -1,10 +1,12 @@
 const userBirthday = document.querySelector(".user-birthday");
 const userNumber = document.querySelector(".user-number");
-const fintBtn = document.querySelector(".find-btn");
+const btnFind = document.querySelector(".find-btn");
+const btnCross = document.querySelector(".cross-btn");
 const outputPara = document.querySelector(".output-para");
+const privacyPara = document.querySelector(".privacy");
 const imgElement = document.querySelector(".img-output");
 let sumOfBirthday = 0;
-fintBtn.addEventListener('click', () => {
+btnFind.addEventListener('click', () => {
     let birthInput = userBirthday.value;
     let numInput = userNumber.value;
     console.log(birthInput);
@@ -31,4 +33,7 @@ fintBtn.addEventListener('click', () => {
         outputPara.style.color = 'black';
         imgElement.src = '/images/sad.png';
     }
+})
+btnCross.addEventListener('click',()=>{
+    privacyPara.style.visibility= "hidden";
 })
