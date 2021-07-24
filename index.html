@@ -4,33 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1ad4d3ae1e.js" crossorigin="anonymous"></script>
     <title>Lucky Birthday</title>
     <script src="app.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Lucky Birthday Calculator</h1>
-    <div class="container">
-        <input type="date" class="user-birthday" placeholder="Enter your DOB here.">
-        <input type="number" class="user-number" placeholder="Enter your lucky number here.">
+    <div class="main">
+        <div class="intro">
+            <h1>Is your birthday lucky...?</h1>
+            <a href="#container" class="intro-link">Click here to find out</a>
+        </div>
     </div>
-    <button class="find-btn">Find Out</button>
-    <div class="output">
-        <p class="output-para"></p>
+    <div class="container" id="container">
+        <div class="game">
+            <h3>Enter your birthday and lucky number to play </h3>
+            <form action="">
+                <input type="date" class="user-birthday" placeholder="Enter your DOB here." required>
+                <input type="number" class="user-number" placeholder="Enter your lucky number" required>
+                <button class="find-btn" type="submit">Find Out</button>
+            </form>
+
+            <div class="output">
+                <p class="output-para">Waiting for your input...</p>
+            </div>
+            <img src="/images/think.png" class="img-output">
+            <div class="privacy">
+                <h3>Privacy Notice</h3>
+                <p class="privacy-para">We don't collect or share any sort of user personal information.</p>
+            </div>
+            <footer class="social">
+                <ul>
+                    <li class="social-li">
+                        <a href="https://www.linkedin.com/in/ranjeet-singh-a07017205" target="_blank" class="social-links">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li class="social-li">
+                        <a href="https://github.com/jeetsdev" target="_blank" class="social-links">
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </li>
+                    <li class="social-li">
+                        <a href="https://twitter.com/jeetsdev" target="_blank" class="social-links">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="social-li">
+                        <a href="https://jeetsdev.netlify.app" target="_blank" class="social-links">
+                            <i class="fa fa-briefcase"></i>
+                        </a>
+                    </li>
+                </ul>
+                <p>© 2021 | Made with by <span> ❤️ </span><a href="" class="social-links">Jeetsdev</a></p>
+            </footer>
+        </div>
     </div>
-    <div class="privacy">
-        <h3 class="privacy-heading">Privacy Notice</h3>
-        <p class="privacy-para">We don't collect or share any sort of user personal information.</p>
-    </div>
-    <hr>
-    <footer class="social">
-        <h3 class="social-heading">Reach me</h3>
-        <ul>
-            <li class="social-li"><a href="https://www.linkedin.com/in/ranjeet-singh-a07017205" target="_blank">Linkdin</a></li>
-            <li class="social-li"><a href="https://github.com/jeetech77" target="_blank">Github</a></li>
-            <li class="social-li"><a href="https://twitter.com/Ranjeet39287633" target="_blank">Twitter</a></li>
-            <li class="social-li"><a href="https://ranjeet-singh.netlify.app" target="_blank">Portfolio</a></li>
-        </ul>
-    </footer>
 </body>
 </html>
