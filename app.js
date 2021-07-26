@@ -34,6 +34,6 @@ btnFind.addEventListener('click', () => {
         imgElement.src = '/images/sad.png';
     }
 })
-btnCross.addEventListener('click',()=>{
-    privacyPara.style.visibility= "hidden";
+btnCross.addEventListener('click', () => {
+    privacyPara.style.visibility = "hidden";
 })
