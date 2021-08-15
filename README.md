@@ -8,3 +8,11 @@ If the sum of the all digits presented in your birthdate is divisible by your lu
 - Enter your birthday.
 - Enter you lucky number.
 - Click on the Find Out button to get the result.
+
+## Tech-Stck
+
+- HTML
+- CSS
+- Vanilla JS
+
+Hosted on Netlify.
