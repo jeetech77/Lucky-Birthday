@@ -101,6 +101,7 @@ body {
 }
 
 .privacy{
+    border: 2px solid #a70909;
     transition: all .1s;
     display: flex;
     justify-content: center;
