@@ -5,8 +5,8 @@ const btnCross = document.querySelector(".cross-btn");
 const outputPara = document.querySelector(".output-para");
 const privacyPara = document.querySelector(".privacy");
 const imgElement = document.querySelector(".img-output");
-let sumOfBirthday = 0;
 btnFind.addEventListener('click', () => {
+    let sumOfBirthday = 0;
     let birthInput = userBirthday.value;
     let numInput = userNumber.value;
     console.log(birthInput);
@@ -14,13 +14,20 @@ btnFind.addEventListener('click', () => {
     if (birthInput === '' || numInput === "") {
         outputPara.innerHTML = "Enter some value first.";
         outputPara.style.color = 'red';
-
+        imgElement.src = './images/think.png';
         return;
     }
     birthInput = birthInput.replaceAll("-", '');
     birthInput = parseInt(birthInput);
     numInput = parseInt(numInput);
-    while (birthInput) {
+    if (numInput<1) {
+        outputPara.innerHTML = "Lucky number must be grater than 0";
+        outputPara.style.color = 'red';
+        imgElement.src = './images/think.png';
+        return;
+    }
+    else{
+        while (birthInput) {
         sumOfBirthday += (birthInput % 10);
         birthInput = Math.floor(birthInput / 10);
     }
@@ -32,7 +39,7 @@ btnFind.addEventListener('click', () => {
         outputPara.innerHTML = "Opps! Your birthday is not lucky. 🙁🙁"
         outputPara.style.color = 'black';
         imgElement.src = '/images/sad.png';
-    }
+    }}
 })
 btnCross.addEventListener('click', () => {
     privacyPara.style.visibility = "hidden";
